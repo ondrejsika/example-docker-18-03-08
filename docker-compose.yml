@@ -1,0 +1,9 @@
+version: '3'
+services:
+    counter:
+        build: .
+        image: counter
+        ports:
+            - 8000:80
+    redis:
+        image: redis:alpine
